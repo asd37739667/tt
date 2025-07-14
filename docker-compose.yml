@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  ts:
+    image: python:3.12-slim
+    volumes:
+      - .:/tt
+    working_dir: /tt
+    command: python ts.py
